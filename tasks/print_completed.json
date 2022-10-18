@@ -1,0 +1,13 @@
+{
+    "description": "Print completed message",
+    "input_method": "environment",
+    "implementations": [
+        {"name": "print_completed.sh"}
+    ],
+    "parameters": {
+      "message": {
+        "description": "Message to print",
+        "type": "String[1]"
+      }
+    }
+  }

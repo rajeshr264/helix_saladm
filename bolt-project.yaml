@@ -1,5 +1,5 @@
 ---
-name: saladm
+name: helix_saladm
 format: rainbow
 modules:
 - alanpetersen/helix

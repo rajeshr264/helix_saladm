@@ -1,0 +1,6 @@
+---
+name: saladm
+format: rainbow
+modules:
+- alanpetersen/helix
+- puppet/yum

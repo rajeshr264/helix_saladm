@@ -1,0 +1,21 @@
+groups:
+  - name: p4server
+    targets:
+      - 127.0.0.1:2222
+    config:
+      transport: ssh
+      ssh :
+       user: vagrant
+       run-as: root
+       host-key-check: false
+       private-key : ./.vagrant/machines/p4server/virtualbox/private_key
+  - name: p4client
+    targets:
+      - 127.0.0.1:2200
+    config:
+      transport: ssh
+      ssh :
+       user: vagrant
+       run-as: root
+       host-key-check: false
+       private-key : ./.vagrant/machines/p4client/virtualbox/private_key

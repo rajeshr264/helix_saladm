@@ -1,7 +1,7 @@
 # Stress Automation Lab
 
 # Local laptop testing using Vagrant & VirtualBox 6.1
-- Install Vagrant
+- Install Vagrant : https://www.vagrantup.com/downloads
 - Install only VirtualBox 6.1 (older builds): https://www.virtualbox.org/wiki/Download_Old_Builds
 
 # Getting started

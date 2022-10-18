@@ -1,14 +1,14 @@
-# *Stress Automation Lab*
+# Stress Automation Lab
 
 # Local laptop testing using Vagrant & VirtualBox 6.1
 - Install Vagrant
 - Install only VirtualBox 6.1 (older builds): https://www.virtualbox.org/wiki/Download_Old_Builds
 
-# *Getting started*
+# Getting started
 ## Setup Step
 - Install the puppet dependency modules from Forge: bolt module install
 
-## *Workflow*
+## Workflow
 - Provisioning Step, Create VMs Phase: vagrant up --provider=virtualbox
 - Configuration Management step, Install the P4 server & client : bolt plan run saladm::install -t p4server,p4client server=p4server client=p4client
 - Provisioning Step, Teardown Phase: vagrant destroy  -f

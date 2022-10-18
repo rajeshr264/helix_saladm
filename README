@@ -10,5 +10,5 @@
 
 ## Workflow
 - Provisioning Step, Create VMs Phase: vagrant up --provider=virtualbox
-- Configuration Management step, Install the P4 server & client : bolt plan run saladm::install -t p4server,p4client server=p4server client=p4client
+- Configuration Management step, Install the P4 server & client : bolt plan run saladm::install -t all server=p4server client=p4client
 - Provisioning Step, Teardown Phase: vagrant destroy  -f

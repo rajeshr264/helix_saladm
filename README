@@ -9,14 +9,16 @@
 
 # Getting started
 ## Setup Step
-- Install the puppet dependency modules from Forge: bolt module install
+- Clone this repo 
+- Install the puppet dependency modules from Forge: $ bolt module install
 
 ## Workflow
-- Provisioning Step, Create VMs Phase: vagrant up --provider=virtualbox
-- Configuration Management step, Install the P4 server & client : bolt plan run helix_saladm::install -t all server=p4server client=p4client
+- Provisioning Step, Create VMs Phase:$  vagrant up --provider=virtualbox
+- Configuration Management step, Install the P4 server & client : $ bolt plan run helix_saladm::install -t all server=p4server client=p4client
+
 - Verification step: 
-  - Log in to P4 Server node: vagrant ssh p4server 
-  - Log in to P4 Client node: vagrant ssh p4client 
+  - Log in to P4 Server node: $ vagrant ssh p4server 
+  - Log in to P4 Client node: $ vagrant ssh p4client 
   - check if all the software have been installed properly.
   
-- Provisioning Step, Teardown Phase: vagrant destroy  -f
+- Provisioning Step, Teardown Phase: $ vagrant destroy  -f

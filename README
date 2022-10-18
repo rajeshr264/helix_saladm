@@ -1,5 +1,8 @@
 # Stress Automation Lab
 
+# DEMO: This demo only shows how to automate the installation of P4 server and client packages from existing module on the forge. 
+# IMP:  You will not get a fully functional P4 environment at the end of this demo.
+
 # Local laptop testing using Vagrant & VirtualBox 6.1
 - Install Vagrant : https://www.vagrantup.com/downloads
 - Install only VirtualBox 6.1 (older builds): https://www.virtualbox.org/wiki/Download_Old_Builds
@@ -11,4 +14,9 @@
 ## Workflow
 - Provisioning Step, Create VMs Phase: vagrant up --provider=virtualbox
 - Configuration Management step, Install the P4 server & client : bolt plan run helix_saladm::install -t all server=p4server client=p4client
+- Verification step: 
+  - Log in to P4 Server node: vagrant ssh p4server 
+  - Log in to P4 Client node: vagrant ssh p4client 
+  - check if all the software have been installed properly.
+  
 - Provisioning Step, Teardown Phase: vagrant destroy  -f

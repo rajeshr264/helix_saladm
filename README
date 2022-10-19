@@ -1,4 +1,4 @@
-# Stress Automation Lab
+# Helix Stress Automation Lab Administration (Helix_SALADM)
 
 # DEMO: This demo only shows how to automate the installation of P4 server and client packages from existing module on the forge. 
 # IMP:  You will not get a fully functional P4 environment at the end of this demo.
